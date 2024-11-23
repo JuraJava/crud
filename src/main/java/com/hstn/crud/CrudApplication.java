@@ -104,8 +104,8 @@ public class CrudApplication {
 
     private void createPupil(PupilDAOImpl pupilDAOImpl) {
         System.out.println("Creating new pupil ...");
-        Pupil pupil = new Pupil("Ivan", "Ivanov", "ivanov@gmail.com");
-//        Pupil pupil = new Pupil("Oleg", "Petrov", "petrov@gmail.com");
+//        Pupil pupil = new Pupil("Ivan", "Ivanov", "ivanov@gmail.com");
+        Pupil pupil = new Pupil("Oleg", "Petrov", "petrov@gmail.com");
         System.out.println("Saving pupil in DB ...");
         pupilDAOImpl.save(pupil);
         System.out.println("Pupil in DB: \n\t" + pupil);
